@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+
+
+
+/* === Square === */
 function Square(props){
   return (
     <button
@@ -12,6 +16,13 @@ function Square(props){
     </button>
   );
 }
+/* ============== */
+
+
+
+
+
+/* === Board === */
 
 class Board extends React.Component {
   renderSquare(i) {
@@ -45,6 +56,12 @@ class Board extends React.Component {
     );
   }
 }
+/* ============== */
+
+
+
+
+/* === Game === */
 
 class Game extends React.Component {
   constructor(props){
@@ -127,7 +144,13 @@ class Game extends React.Component {
   }
 }
 
-// ========================================
+/* ============== */
+
+
+
+
+
+// ======================================== //
 
 ReactDOM.render(
   <Game />,
@@ -153,3 +176,4 @@ function calculateWinner(squares) {
   }
   return null;
 }
+/* ============== */
